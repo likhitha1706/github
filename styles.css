@@ -1,6 +1,52 @@
 body{
-    background-color:olive;
+    background-image: url('rg.jpg');
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
 }
-h1{
-    background-color: blueviolet;
-}
+.center{
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-weight: bold;
+    color:antiquewhite;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  
+  }
+  .center p::before{
+    content: 'CREATORS NATION';
+    animation: animate 8s infinite;
+  }
+  @keyframes animate{
+    0%{
+        font-size: 65px;
+        opacity: 1;
+    }
+    25%{
+        font-size: 65px;
+        opacity: 0;
+    }
+    50%{
+        font-size: 65px;
+        opacity: 1;
+    }
+    75%{
+        font-size: 65px;
+        opacity: 0;
+    }
+    100%{
+        font-size: 65px;
+        opacity: 1;
+        content:'CREATORS NATION';
+    }
+  }    
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
